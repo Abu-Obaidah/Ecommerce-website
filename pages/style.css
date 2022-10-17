@@ -31,11 +31,13 @@
   width: 6vw;
   overflow: hidden;
   cursor: pointer;
+  user-select: none;
 }
 
 #navbar #logo .name {
   margin-left: 95px;
   font-size: 1.5rem;
+  user-select: none;
   animation: nameing 20s ease-in-out reverse infinite;
 }
 
@@ -92,7 +94,7 @@
 
 /* home page starts */
 
-.home {
+#home {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -104,30 +106,31 @@
   background: url("/img/home\ img.jpg");
   background-size: cover;
   z-index: -1;
+  user-select: none;
 }
 
-.home h3 {
+#home h3 {
   font-size: 1.5rem;
   color: rgb(29, 29, 29);
 }
 
-.home h2 {
+#home h2 {
   font-size: 3rem;
   color: rgb(69, 52, 82);
 }
 
-.home h1 {
+#home h1 {
   font-size: 3rem;
   color: rgb(118, 28, 187);
 }
 
-.home h5 {
+#home h5 {
   font-size: 1rem;
   color: rgb(29, 29, 29);
   font-weight: 500;
 }
 
-.home .btn {
+#home .btn {
   background-image: url("/img/button.png");
   background-size: cover;
   border-style: none;
@@ -139,7 +142,7 @@
   padding: 14px 98px;
 }
 
-.home .btn:hover {
+#home .btn:hover {
   color: rgb(196, 193, 193);
   cursor: pointer;
 }
@@ -148,7 +151,7 @@
 
 /* features page start */
 
-.features {
+#features {
   display: flex;
   width: 100%;
   height: 30vh;
@@ -156,9 +159,10 @@
   margin: 5px 8px;
   align-items: center;
   justify-content: center;
+  user-select: none;
 }
 
-.features .items {
+#features .items {
   display: flex;
   flex-direction: column;
   width: 13vw;
@@ -171,7 +175,7 @@
   box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
 }
 
-.features .items img {
+#features .items img {
   display: flex;
   width: 10vw;
   height: 20vh;
@@ -180,7 +184,7 @@
 }
 
 
-.features .items h6 {
+#features .items h6 {
   display: inline-block;
   padding: 9px 8px 6px 8px;
   line-height: 1;
@@ -191,27 +195,27 @@
   color: rgb(255, 255, 255);
 }
 
-.features .items:nth-child(2) h6 {
+#features .items:nth-child(2) h6 {
   background-color: #3c8870;
   color: rgb(255, 255, 255);
 }
 
-.features .items:nth-child(3) h6 {
+#features .items:nth-child(3) h6 {
   background-color: #46bc8b;
   color: rgb(255, 255, 255);
 }
 
-.features .items:nth-child(4) h6 {
+#features .items:nth-child(4) h6 {
   background-color: #c397e8;
   color: rgb(255, 255, 255);
 }
 
-.features .items:nth-child(5) h6 {
+#features .items:nth-child(5) h6 {
   background-color: #a7edc8;
   color: rgb(255, 255, 255);
 }
 
-.features .items:nth-child(6) h6 {
+#features .items:nth-child(6) h6 {
   background-color: #9cec04;
   color: rgb(255, 255, 255);
 }
@@ -226,6 +230,7 @@
   text-align: center;
   position: relative;
   display: inline;
+  user-select: none;
 }
 
 .product .headline h1 {
@@ -254,15 +259,15 @@
 .container .pro {
   position: relative;
   margin-top: 80px;
-  min-width: 21%;
-  width: 225px;
-  height: 510px;
+  min-width: 18%;
+  width: 221px;
+  height: 400px;
   overflow: hidden;
   padding: 5px 8px;
   background-color: #ffffff;
-  margin: 10px 15px;
-  border-radius: 23px;
-  box-shadow: rgb(0, 0, 0, 0.24) 0px 3px 8px;
+  margin: 20px 30px;
+  border-radius: 10px;
+  box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
   transition: all .5s ease-in-out;
   cursor: pointer;
 }
@@ -272,10 +277,10 @@
 }
 
 .container img {
-  width: 300px;
-  border-radius: 23px;
-  height: 380px;
-  margin: 3px;
+  width: 230px;
+  border-radius: 8px;
+  height: 275px;
+  margin: 5px 0px 0px 0px;
 }
 
 .container .pro .tag {
@@ -324,7 +329,7 @@
   background-color: rgb(244, 230, 255);
   color: rgba(55, 2, 95);
   border: .5px solid rgba(55, 2, 95, 0.24);
-  transition: all .5s ease-in-out;
+  transition: all .2s ease-in-out;
 }
 
 .container .pro .cart:hover {
@@ -343,17 +348,21 @@
   text-align: center;
   flex-direction: column;
   background: url("/banners/bg2.jpg") no-repeat center center/cover;
-  width: 100%;
+  width: 90%;
   height: 300px;
   padding: 8px 12px;
-  margin: 20px 0px;
+  border-radius: 6px;
+  margin: 20px auto;
+  user-select: none;
 }
 
 .back {
   position: absolute;
   background-color: black;
-  width: 100%;
+  width: 90%;
   height: 300px;
+  border-radius: 6px;
+  margin: 20px auto;
   opacity: 0.4;
 }
 
@@ -368,11 +377,12 @@
   background-color: rgb(118, 28, 187);
   box-shadow: rgb(0, 0, 0, 0.44) 0px 3px 8px;
   transition: all 0.7s ease-in-out;
-   z-index: 1;
+  z-index: 1;
+  cursor: pointer;
 }
 
 .button:hover {
-  color: black;
+  color: rgb(118, 28, 187);
   background-color: rgb(218, 169, 255);
   box-shadow: rgb(0, 0, 0, 0.24) 0px 3px 8px;
 }
@@ -386,23 +396,112 @@
 }
 
 #banner h1 {
-  font-size: 2.5rem;
+  font-size: 2.8rem;
   font-family: 'Varela Round', sans-serif;
-  color:rgb(199, 138, 245);
+  color: rgb(199, 138, 245);
   font-weight: 600;
   margin: 8px 5px;
-   z-index: 1;
-   text-shadow: rgba(34, 34, 34, 0.8) 0px 3px 8px;
+  z-index: 1;
+  text-shadow: rgba(34, 34, 34, 0.8) 0px 3px 8px;
 }
 
-#banner h1 span{
-  font-size: 2.7rem;
+#banner h1 span {
+  font-size: 3rem;
   color: white;
   font-weight: 800;
 }
 
-
-
-
-
 /* banner ends */
+
+
+/* Promo Starts */
+
+#promo {
+  padding: 5px 5px;
+  display: flex;
+  width: 100%;
+  height: 50vh;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  user-select: none;
+  user-select: none;
+}
+
+#promo .promo-container {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+  text-align: start;
+  flex-direction: column;
+  width: 45%;
+  border-radius: 6px;
+  height: 330px;
+  padding: 8px 50px;
+  color: white;
+  margin: 20px 15px;
+}
+
+#promo1 {
+  background: url("/img/promo1.jpg")no-repeat center center/cover;
+}
+
+#promo1 h2,
+h4,
+span {
+  font-family: 'Varela Round', sans-serif;
+  font-weight: 700;
+  text-shadow: rgba(34, 34, 34, 0.2) 0px 3px 8px;
+  font-size: 2.5rem;
+}
+
+#promo1 h4 {
+  font-size: 1.5rem;
+}
+
+#promo1 span {
+  font-size: 1rem;
+}
+
+#promo2 {
+  background: url("/img/promo\ 2.jpg")no-repeat center center/cover;
+}
+
+#promo2 h2,
+h4,
+span {
+  font-family: 'Varela Round', sans-serif;
+  font-weight: 700;
+  text-shadow: rgba(34, 34, 34, 0.2) 0px 3px 8px;
+  font-size: 2.5rem;
+}
+
+#promo2 h4 {
+  font-size: 1.5rem;
+}
+
+#promo2 span {
+  font-size: 1rem;
+}
+
+#promo .promo-container .promo-btn {
+  height: 5vh;
+  width: 10vw;
+  border: 2px solid white;
+  background-color: transparent;
+  margin: 10px 5px;
+  border-radius: 6px;
+  font-family: 'Varela Round', sans-serif;
+  font-weight: 700;
+  color: white;
+  transition: all .2s ease-in;
+  cursor: pointer;
+}
+
+#promo .promo-container .promo-btn:hover {
+  background-color: white;
+  color: orangered;
+}
+
+/* Promo ends */
